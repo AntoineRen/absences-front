@@ -1,0 +1,54 @@
+<div id="connexionPanel" class="text-light rounded p-2">
+
+  <div class="row text-center p-2">
+
+    <div class="col-12">
+      <img id="logo" src="https://cdn.pixabay.com/photo/2019/08/11/18/50/icon-4399684_960_720.png"
+        alt="logo question mark">
+    </div>
+
+    <div class="col-12">
+      <h2>Gestion des Absences</h2>
+    </div>
+
+    <div class="col-12 mt-2 ">
+      <form>
+        <div class="form-group row d-flex justify-content-center">
+
+          <label for="email" class="col-form-label col-md-12">Email</label>
+          <div>
+            <input type="email" name="email" id="email" class="form-control" placeholder="employe@dev.fr"
+              [(ngModel)]="utilisateur.email" required #email="ngModel" email>
+          </div>
+
+          <small *ngIf="email.touched && email.dirty && email.invalid" class="col-12">
+            Adresse email invalide.
+          </small>
+
+
+        </div>
+
+        <div class="form-group row d-flex justify-content-center">
+
+          <label for="mdp" class="col-form-label col-md-12">Mot de passe</label>
+          <div>
+            <input type="password" name="password" id="mdp" class="form-control" placeholder="********"
+            [(ngModel)]="utilisateur.password" #password="ngModel" required>
+          </div>
+
+        </div>
+
+        <div class="col-12 text-right mt-4">
+          <button type="submit" class="btn btn-light" (click)="connecter()" [disabled]="!(email.valid && password.valid)">Connexion</button>
+        </div>
+      </form>
+
+      <ng-container *ngIf="err" class="mt-2">
+        <small>Vos informations d'authentification sont invalides.</small>
+      </ng-container>
+      <ng-container *ngIf="connectionReussie">
+        <small>YOUPI</small>
+      </ng-container>
+    </div>
+  </div>
+</div>
