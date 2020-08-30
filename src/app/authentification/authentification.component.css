@@ -3,17 +3,13 @@
 }
 
 #connexionPanel{
-  border : solid 5px #cd3a92;
-  background-color: #4c1636;
+  border : solid 5px var(--border-color);
+  background-color: var(--secondary-bg-color);
   width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 small{
-  color:rgb(228, 8, 45);
+  color:var(--error-color);
 }
 
 @media screen and (max-width: 770px){

@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthentificationComponent } from './authentification/authentification.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AccueilComponent } from './accueil/accueil.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    AccueilComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

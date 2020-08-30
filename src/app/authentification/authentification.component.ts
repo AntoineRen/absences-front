@@ -13,7 +13,6 @@ export class AuthentificationComponent implements OnInit {
 
   utilisateur: Utilisateur = new Utilisateur({});
   err = false;
-  connectionReussie = false;
 
   constructor(private authentificationService: AuthentificationService, private router: Router) { }
 
@@ -23,7 +22,7 @@ export class AuthentificationComponent implements OnInit {
     this.authentificationService.connecter(this.utilisateur)
     .subscribe(
       utilisateur => {
-        this.connectionReussie = true;
+        this.router.navigate(['/accueil']);
       },
       err => this.err = true
     );

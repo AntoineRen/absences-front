@@ -1,0 +1,17 @@
+.navbar{
+  background-color: var(--secondary-bg-color);
+  border-bottom: solid 3px var(--border-color);
+}
+
+.navbar-toggler-icon{
+  color: white;
+}
+
+#logout_button{
+  background-color: rgb(65, 2, 11);
+  color: white;
+}
+
+a{
+  color: white;
+}

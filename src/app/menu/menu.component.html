@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="/accueil">
+    <img src="https://cdn.pixabay.com/photo/2019/08/11/18/50/icon-4399684_960_720.png" width="30" height="30"
+      class="d-inline-block align-top" alt="">
+    GDA
+  </a>
+  <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/accueil">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="isMenuCollapsed = true">Gestion des absences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="isMenuCollapsed = true">Planning des absences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="isMenuCollapsed = true">Validation des demandes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="isMenuCollapsed = true">Vue synthétiques</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="isMenuCollapsed = true">Jours feriés</a>
+      </li>
+    </ul>
+    <div class="ml-auto">
+      <button type="button" class="btn" id="logout_button">Se déconnecter</button>
+    </div>
+  </div>
+</nav>

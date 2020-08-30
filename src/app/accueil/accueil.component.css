@@ -1,0 +1,11 @@
+#message_accueil{
+  border : solid 3px var(--border-color);
+  background-color: var(--secondary-bg-color);
+  margin : 20%;
+}
+
+@media screen and (max-width: 770px){
+  #message_accueil{
+    margin : 20% 5%;
+  }
+}
