@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AntoineRen/absences-front.svg?branch=master)](https://travis-ci.org/AntoineRen/absences-front) https://antoineren.github.io/absences-front/connexion
+
 # AbsencesFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
