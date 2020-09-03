@@ -7,7 +7,7 @@ script:
   - npm run build
   - cd dist/absences-front && cp index.html 404.html
 deploy:
-  local-dir: dist/front
+  local-dir: dist/absences-front
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
