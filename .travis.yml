@@ -5,7 +5,7 @@ before_script:
   - npm install
 script:
   - npm run build
-  - cd dist/front && cp index.html 404.html
+  - cd dist/absences-front && cp index.html 404.html
 deploy:
   local-dir: dist/front
   provider: pages
